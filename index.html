@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <title>App contactos</title>
+</head>
+<body>
+    <div id="form-contactos">
+        <svg id='contactos-icon' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        <h1 id="titulo">Contactos</h1>
+    <!-- hacer formulario que contenga el nombre y los numeros  -->
+    <form id="formulario">
+        <!-- input del nombre del contacto -->
+        <div class="form-input-container">
+            <div class="indicaciones">
+                <label for="name-input">Nombre</label>
+                <svg class="icons-input" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                  </svg>      
+            </div>         
+            <input
+             id='name-input' 
+             type="text" 
+             autocomplete="off" 
+             placeholder="Ejemplo 'maria' ">
+            <p class="helper-text">Ingrese nombre del contacto</p>
+        </div>
+        <!-- input del numero de tlfn -->
+        <div class="form-input-container">
+            <div class="indicaciones">
+                <label for="number-input">Numero de telefono</label>
+            <svg class="icons-input" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 3.75L18 6m0 0l2.25 2.25M18 6l2.25-2.25M18 6l-2.25 2.25m1.5 13.5c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+              </svg>         
+            </div>        
+            <input
+             id='number-input' 
+             type="text" 
+             autocomplete="off"
+             placeholder="Ejemplo '0414555...'">
+             <p class="helper-text">Ingrese numero de telefono existente</p>
+        
+        </div>
+        <button id="btn-agg" type="submit">Agregar</button>
+    </form>
+    </div>
+    <div id="container-contactos">
+        <h2 id="contactos-add">Contactos agregados</h2>
+        <ul id="container-list">
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
